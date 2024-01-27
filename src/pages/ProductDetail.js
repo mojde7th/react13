@@ -11,7 +11,7 @@ function ProductDetail() {
     const { productId } = useParams();
     console.log("typeeeeeof", Math.ceil(productId));
     switch (true) {
-      case Math.ceil(productId) > 1 && Math.ceil(productId) < 52:
+      case Math.ceil(productId) >= 1 && Math.ceil(productId) < 52:
         return productId;
 
       default:
